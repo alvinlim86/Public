@@ -3,7 +3,10 @@ class Person:
     self.name = name
     self.age = age
 
-p1 = Person("Alvin", 36)
+class Student(Person):
+  pass
+
+p1 = Student("Alvin", 36)
 str = "My name is {}. "
 str2 = "I am {} this year."
 print(str.format(p1.name)+str2.format(p1.age))
